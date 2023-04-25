@@ -33,8 +33,20 @@ h1 {
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 20px;
+  border: solid 1px #888888;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-inline: 20px;
   margin-bottom: 10px;
   margin-left: 5px;
-  border: solid 1px #888888;
-  background-color: #ffffff; 
+}
+
+/* Link Formatting */
+a {
+  text-decoration: none;
+  color: blue
+}
+
+a:hover {
+  text-decoration: underline;
 }
