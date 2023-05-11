@@ -1,21 +1,54 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 9 Javascript File
+// Author: Davis Goodman
+// Date: 5/10/2023
 
-// Constants
+// Elements
 
-// Functions
+challengeEl =
+document.getElementById("challenge");
+console.log("Define challengeEl")
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+problemsEl =
+document.getElementById("problems")
+console.log("Define problemsEl")
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+outputEl =
+document.getElementById("output");
+console.log("Define outputEl");
 
-// let's get this party started
-main();
+// Additional Text
+
+new1El =
+document.createElement("p");
+new1El.innerHTML = "This is new!"
+console.log("Create new1El");
+
+new2El =
+document.createElement("p");
+new2El.innerHTML = "So is this!"
+console.log("Create new2El");
+
+// Attributes
+
+setTimeout(function() {
+  challengeEl.style.fontSize = "10pt"
+  console.log("Shrink Challenge")
+}, 1000);
+
+setTimeout(function() {
+problemsEl.style.fontStyle = "italic"
+console.log("Italicize Problems")
+}, 2000);
+
+// Append
+
+setTimeout(function() {
+  outputEl.appendChild(new1El),
+  console.log("Append new1El")
+}, 3000);
+
+
+setTimeout(function() {
+  outputEl.appendChild(new2El),
+  console.log("Append new2El")
+}, 4000);
