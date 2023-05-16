@@ -1,21 +1,30 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 10 Javascript
+// Author: Davis Goodman
+// Date: 5/15/2023
 
-// Constants
+// Event
+var button = document.getElementById("my-button");
+console.log("Define button")
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// sortUserName
+function sortUserName () {
+  userName = document.getElementById('user-name').value;
+  console.log("userName =", userName);
+  // Split string to array
+  var nameArray = userName.split('');
+  console.log("nameArray =", nameArray);
+  // Sort the array
+  var nameArraySort = nameArray.sort();
+  console.log("nameArraySort =", nameArraySort);
+  // Join array back to a string
+  var nameSorted = nameArraySort.join();
+  console.log("nameSorted =", nameSorted);
+ 
+  // Output Results
+  outputEl =
+  document.getElementById("output");
+  outputEl.innerHTML = nameSorted
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Event Listener
+button.addEventListener('click', sortUserName)
