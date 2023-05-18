@@ -41,6 +41,13 @@ h1 {
   margin-left: 5px;
 }
 
+/* Button Formatting */
+
+.button {
+  margin-top: 10px;
+}
+
+
 /* Link Formatting */
 a {
   text-decoration: none;

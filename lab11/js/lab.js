@@ -1,21 +1,31 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 11 jQuery
+// Author: Davis Goodman
+// Date: 5/17/2023
 
-// Constants
+// Buttons
 
-// Functions
+$("#challenge").append("<br><button type='button' class='button challenge-button'>Challenge</button>");
+console.log("Create Challenge Button");
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+$("#problems").append("<br><button type='button' class='button problems-button'>Problems</button>");
+console.log("Create Problems Button");
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+$("#output").append("<br><button type='button' class='button results-button'>Results</button>");
+console.log("Create Results Button");
 
-// let's get this party started
-main();
+// Button Functions
+
+$("button.challenge-button").click(function(){
+    $("#challenge").toggleClass("small");
+    console.log("Toggle Challenge Styling");
+});
+
+$("button.problems-button").click(function(){
+    $("#problems").toggleClass("big");
+    console.log("Toggle Problems Styling");
+});
+
+$("button.results-button").click(function(){
+    $("#output").toggleClass("green");
+    console.log("Toggle Results Styling");
+});
