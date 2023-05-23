@@ -43,10 +43,15 @@ h1 {
 
 /* Button Formatting */
 
-.button {
-  margin-top: 10px;
+button {
+  margin-block: 10px;
 }
 
+/* Input Formatting */
+
+input {
+  margin-top: 10px;
+}
 
 /* Link Formatting */
 a {

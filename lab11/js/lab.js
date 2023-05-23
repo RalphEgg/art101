@@ -4,13 +4,13 @@
 
 // Buttons
 
-$("#challenge").append("<br><button type='button' class='button challenge-button'>Challenge</button>");
+$("#challenge").append("<br><button type='button' class='challenge-button'>Challenge</button>");
 console.log("Create Challenge Button");
 
-$("#problems").append("<br><button type='button' class='button problems-button'>Problems</button>");
+$("#problems").append("<br><button type='button' class='problems-button'>Problems</button>");
 console.log("Create Problems Button");
 
-$("#output").append("<br><button type='button' class='button results-button'>Results</button>");
+$("#output").append("<br><button type='button' class='results-button'>Results</button>");
 console.log("Create Results Button");
 
 // Button Functions
