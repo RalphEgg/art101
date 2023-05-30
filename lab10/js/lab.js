@@ -10,14 +10,16 @@ console.log("Define button")
 function sortUserName () {
   userName = document.getElementById('user-name').value;
   console.log("userName =", userName);
+   // Remove spaces
+   userNameSpaceless = userName.replaceAll(" ", "");
   // Split string to array
-  var nameArray = userName.split('');
+  var nameArray = userNameSpaceless.split('');
   console.log("nameArray =", nameArray);
   // Sort the array
   var nameArraySort = nameArray.sort();
   console.log("nameArraySort =", nameArraySort);
   // Join array back to a string
-  var nameSorted = nameArraySort.join();
+  var nameSorted = nameArraySort.join(', ');
   console.log("nameSorted =", nameSorted);
  
   // Output Results

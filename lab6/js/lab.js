@@ -3,6 +3,7 @@
 
 // Define Variables
 myTransport = ["Honda CR-V", "Bus"];
+myTransportString = myTransport.join(', ');
 
 // Main Object
 myMainRide = {
@@ -16,6 +17,6 @@ myMainRide = {
 }
 
 // Output
-document.writeln("My everyday transportation: ", myTransport, "<br>");
+document.writeln("My everyday transportation: ", myTransportString, "<br>");
 document.writeln("My Main Ride: <pre>",
     JSON.stringify(myMainRide, null, '\t'), "</pre>");

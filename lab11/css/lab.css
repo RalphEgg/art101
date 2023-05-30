@@ -4,6 +4,7 @@
 
 .small {
     font-size: 70%;
+    line-height: 140%;
 }
 
 .big {
@@ -14,4 +15,8 @@
 .green {
     font-weight: bold;
     color: rgb(44, 148, 44);
+}
+
+.text {
+    margin: 0px
 }
