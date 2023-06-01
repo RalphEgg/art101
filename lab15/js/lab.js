@@ -13,7 +13,7 @@ function getStuff(){
     })
     .done(function(data){
         // console.log(data);
-        $("#output").html("It's <span>" + data.name + "</span>!");
+        $("#output").html("It's <b>" + data.name + "</b>!");
         console.log(data.name + ": " + data.id);
     })
 }
